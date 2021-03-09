@@ -5,6 +5,7 @@ body {
 .hero {
     width:100vw;
     height:100vh;
+    float:left;
 }
 
 .hero h1 {
@@ -30,6 +31,7 @@ i {
     color:white;
     font-size: 3em;
     
+    
 }
 .hero-inner {
    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./Images/comics-hero-image.jpg");
@@ -46,4 +48,32 @@ i {
     width:50%;
 }
 
+.character-spotlight {
+    float:right;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-right: 100px;
+    display:flex;
+    background-color: rgb(49, 20, 218);
+    padding:80px;
+    border-radius: 5rem;
+
+}
+
+.character-spotlight h3 {
+    font-family: 'Anton',sans-serif;
+    font-size: 50px;
+    margin-top:-10px;
+}
+
+#character-select {
+    font-family: 'Anton',sans-serif;
+    padding:0;
+}
+
+select {
+    width: 300px;
+    height:30px;
+    border-radius: 25px;
+}
 
