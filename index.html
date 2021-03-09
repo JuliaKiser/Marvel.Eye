@@ -12,38 +12,40 @@
 </head>
 <body>
     <!-- Hero Image Background -->
-    <section class="hero">
+    <div class="hero">
         <div class="hero-inner">
             <!-- Header -->
             <h1>Marvel <i class='fa fa-eye fa-spin'style="font-size: 85px;"></i>
             </h1>
             <!-- Quote -->
-            <h3>
+            <section class="side-x">
            "Heroes are made by the path they choose, not the powers they are graced with.   - Iron Man"
-            </h3>
+            </section>
+            <section class='side-y'>
+                <div class="container">
+                <h3>
+                    Character Spotlight
+                </h3>
+                <form action="assets/character.results.html">
+                    <div class="selectbox">
+                        <p id="character-select"><i class='fa fa-eye'></i> Select a Character:</p>
+                        <select id="characters">
+                            <option name="default" value="default">Select</option>
+                            <option name="Wonder Woman" value="Wonder Woman">Wonder Woman</option>
+                            <option name="Captain America" value="Captain America">Captain America</option>
+                            <option name="Doctor Strange" value="Doctor Strange">Doctor Strange</option>
+                            <option name="Black Panther" value="Black Panther">Black Panther</option>
+                            <option name="Hulk" value="Hulk">Hulk</option>
+                            <option name="Thor" value="Thor">Thor</option>
+                        </select>
+                        <button>Search</button>
+                    </div>
+                </div>
+                </form>
+            </section>
         </div>
-    </section>
+    </div>
     <!-- Selection Form Section -->
-    <section class='character-spotlight'>
-        <div class="container">
-        <h3>
-            Character Spotlight
-        </h3>
-        <form action="assets/character.results.html">
-            <div class="selectbox">
-                <p id="character-select"><i class='fa fa-eye'></i> Select a Character:</p>
-                <select id="characters">
-                    <option name="default" value="default">Select</option>
-                    <option name="Wonder Woman" value="Wonder Woman">Wonder Woman</option>
-                    <option name="Captain America" value="Captain America">Captain America</option>
-                    <option name="Doctor Strange" value="Doctor Strange">Doctor Strange</option>
-                    <option name="Black Panther" value="Black Panther">Black Panther</option>
-                    <option name="Hulk" value="Hulk">Hulk</option>
-                    <option name="Thor" value="Thor">Thor</option>
-                </select>
-            </div>
-        </div>
-        </form>
-    </section>
+    
 </body>
 </html>
