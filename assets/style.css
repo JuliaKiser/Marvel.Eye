@@ -1,0 +1,49 @@
+body {
+    margin:0;
+}
+
+.hero {
+    width:100vw;
+    height:100vh;
+}
+
+.hero h1 {
+    font-size: 5em;
+    background-color: rgb(185, 16, 50);
+    color:black;
+    text-align: center;
+    margin:0;
+    font-family: 'Anton', sans-serif;
+
+}
+i {
+    font-family: 'Anton', sans-serif;
+}
+
+.hero h3 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+    margin-top: 100px;
+    width:33%;
+    color:white;
+    font-size: 3em;
+    
+}
+.hero-inner {
+   background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./Images/comics-hero-image.jpg");
+   height:1000px;
+   margin:0%;
+}
+
+#quote {
+    color:white;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-left: 100px;
+    display:flex;
+    width:50%;
+}
+
+
