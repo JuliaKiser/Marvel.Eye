@@ -1,5 +1,5 @@
 
-var superHeroName = ["thor"];
+var superHeroName = [""];
 
 function landingGiphy() {
    //Pulls in data from giphy API
@@ -19,7 +19,22 @@ function landingGiphy() {
 
     })
 }
-landingGiphy();
+
+//when character is clicked, passes name to superHero var and calls landingGiphy();
+$('#characters').on('click', function(e) {
+
+    var dropdownValue = e.target.value;
+    console.log(e.target.value)
+    superHeroName.push(dropdownValue);
+
+    landingGiphy();
+})
 
 
+
+//When search button is clicked holds selected value to use on the next page.
+// function searchValue() {
+//     var searchedSuperHero = $('.characters').value;
+//     localStorage.setItem('.characters', searchedSuperHero);
+// }
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Eye</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Stick&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
 <body>
     <!-- Hero Image Background -->
     <div class="hero">
-        <div class="hero-inner">
+        <div class="hero-inner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./assets/Images/comics-hero-image.jpg);">
             <!-- Header -->
             <h1>Marvel <i class='fa fa-eye fa-spin'style="font-size: 85px;"></i>
             </h1>
@@ -26,7 +26,7 @@
                 <h3>
                     Character Spotlight
                 </h3>
-                <form action="assets/character.results.html">
+                <form action="character-results.html">
                     <div class="selectbox">
                         <p id="character-select"><i class='fa fa-eye'></i> Select a Character:</p>
                         <select id="characters">
@@ -38,7 +38,7 @@
                             <option id="Hulk" name="Hulk" value="Hulk">Hulk</option>
                             <option id="Thor" name="Thor" value="Thor">Thor</option>
                         </select>
-                        <button class="search" onclick="searchValue()">Search</button>
+                        <button class="search">Search</button>
                     </div>
                 </div>
                 </form>
@@ -49,6 +49,6 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="assets/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
 </html>

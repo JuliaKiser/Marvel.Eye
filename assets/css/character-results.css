@@ -1,0 +1,5 @@
+body {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.658),rgba(255, 255, 255, 0.658)), url("../Images/comicbook.jpg");
+    background-repeat: repeat;
+    background-size: 500px 500px;
+}
