@@ -33,6 +33,7 @@ $('#characters').on('change', function(e) {
 $("#form").submit(function(e){
     e.preventDefault()
     location.href="./character-results.html?hero="+superHeroName
+
 })
 
 //When search button is clicked holds selected value to use on the next page.
