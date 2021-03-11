@@ -20,28 +20,30 @@ i {
 }
 
 .side-x {
-    justify-content: center;
-    align-items: center;
-    padding: 75px;
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 75px; */
     margin-top: 75px;
-    width:33%;
-    color:white;
-    font-size: 3em;
-    float:left;
+    /* width:33%; */
+    /* float:left; */
       
+}
+.subtitle {
+    color:white!important;
+    font-size: 3em!important;
 }
 img {
     margin:0;
     padding:0;
 }
 .side-y {
-    float:right;
+    /* float:right;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding:80px;
     margin-top: 100px;
     margin-right:25px;
-    width:33%;
+    /* width:33%; */
     background-image: linear-gradient(blue,white,blue);
     border-radius: 25px;
     border-style: double;
@@ -65,9 +67,9 @@ img {
     color:white;
     font-size: 24px;
     font-family: sans-serif;
-    margin-left: 100px;
-    display:flex;
-    width:50%;
+    /* margin-left: 100px; */
+    /* display:flex; */
+    /* width:50%; */
 }
 
 
@@ -80,7 +82,7 @@ select {
     width: 300px;
     height:40px;
     border-radius: 25px;
-    align-items: center;
+    /* align-items: center; */
     font-size:20px;
     color:blue;
 }
@@ -94,7 +96,7 @@ button {
     width:100px;
     background-color:green;
     border-radius: 25px;
-    align-items: center;
+    /* align-items: center; */
     font-size:20px;
 
   }
