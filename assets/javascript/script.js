@@ -1,5 +1,5 @@
 
-var superHeroName = [""];
+var superHeroName = "";
 
 function landingGiphy() {
    //Pulls in data from giphy API
@@ -15,22 +15,25 @@ function landingGiphy() {
 
         //Adds image to landing page--replaces quote
         var superHeroGiphy = $("<img src='" + response.data[0].images.original.url + "' style='padding-left: 100px; padding-top:100px;'/>")
-        $(".side-x").replaceWith(superHeroGiphy);
+        $(".side-x").html(superHeroGiphy);
 
     })
 }
 
 //when character is clicked, passes name to superHero var and calls landingGiphy();
-$('#characters').on('click', function(e) {
+$('#characters').on('change', function(e) {
 
     var dropdownValue = e.target.value;
     console.log(e.target.value)
-    superHeroName.push(dropdownValue);
+    superHeroName=(dropdownValue);
 
     landingGiphy();
 })
 
-
+$("#form").submit(function(e){
+    e.preventDefault()
+    location.href="./character-results.html?hero="+superHeroName
+})
 
 //When search button is clicked holds selected value to use on the next page.
 // function searchValue() {

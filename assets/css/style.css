@@ -1,7 +1,9 @@
 body {
     margin:0;
 }
-
+*{
+    outline:1px dotted red;
+}
 
 
 .hero h1 {
@@ -20,13 +22,17 @@ i {
 .side-x {
     justify-content: center;
     align-items: center;
-    padding:100px;
-    margin-top: 100px;
+    padding: 75px;
+    margin-top: 75px;
     width:33%;
     color:white;
     font-size: 3em;
     float:left;
       
+}
+img {
+    margin:0;
+    padding:0;
 }
 .side-y {
     float:right;
