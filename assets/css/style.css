@@ -1,9 +1,6 @@
 body {
     margin:0;
 }
-*{
-    outline:1px dotted red;
-}
 
 
 .hero h1 {
@@ -20,13 +17,7 @@ i {
 }
 
 .side-x {
-    /* justify-content: center;
-    align-items: center; */
-    /* padding: 75px; */
     margin-top: 75px;
-    /* width:33%; */
-    /* float:left; */
-      
 }
 .subtitle {
     color:white!important;
@@ -37,13 +28,9 @@ img {
     padding:0;
 }
 .side-y {
-    /* float:right;
-    justify-content: center;
-    align-items: center; */
     padding:80px;
     margin-top: 100px;
     margin-right:25px;
-    /* width:33%; */
     background-image: linear-gradient(blue,white,blue);
     border-radius: 25px;
     border-style: double;
@@ -55,6 +42,11 @@ img {
     font-size: 45px;
     margin-top:0px;
     font-family: 'Anton', sans-serif;
+    padding:30px;
+}
+
+.selectbox {
+    justify-content: center;
 }
 .hero-inner {
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/Marvel.Eye/assets/Images/comics-hero-image.jpg");
@@ -67,9 +59,6 @@ img {
     color:white;
     font-size: 24px;
     font-family: sans-serif;
-    /* margin-left: 100px; */
-    /* display:flex; */
-    /* width:50%; */
 }
 
 
@@ -82,7 +71,6 @@ select {
     width: 300px;
     height:40px;
     border-radius: 25px;
-    /* align-items: center; */
     font-size:20px;
     color:blue;
 }
@@ -96,7 +84,6 @@ button {
     width:100px;
     background-color:green;
     border-radius: 25px;
-    /* align-items: center; */
     font-size:20px;
 
   }
