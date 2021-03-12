@@ -66,11 +66,35 @@ $(document).ready(function() {
     $(".select-features").click(function() {
       $("#marvel-form").toggle();
     });
-  });
+  
+    
 
 var apiKey = '0ef9234995d516e83ebba70728cb9bb2';
 var pKey = 'ad29053b8d8b8603128abba1779970d734ec4cb8'
 var currentDate = new Date();
+
+function landingGiphy() {
+    console.log("Inside giphy");
+   //Pulls in data from giphy API
+   var temp = localStorage.getItem("superHeroName");
+    var key = 'ZI2FysP1xmhjFzMb9b5dRuERp9p158FQ';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + temp + '&api_key=' + key;
+    
+    $.ajax({
+        url: queryURL,
+        method: 'GET'
+    })
+    .then(function(response) {
+        console.log(response)
+
+        //Adds image to landing page--replaces quote
+        $("#thumbnail").append("<img src='" + response.data[0].images.original.url + "' style='padding-left: 100px; padding-top:100px;'/>")
+        //$(".side-x").html(superHeroGiphy);
+
+    })
+}
+
+landingGiphy();
 
 
 $("#marvel-form").on("submit", function(event) {
@@ -104,3 +128,5 @@ $("#marvel-form").on("submit", function(event) {
     })
 
 })
+
+});

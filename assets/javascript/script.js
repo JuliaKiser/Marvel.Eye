@@ -2,6 +2,7 @@
 var superHeroName = "";
 
 function landingGiphy() {
+    console.log("Inside giphy");
    //Pulls in data from giphy API
     var key = 'ZI2FysP1xmhjFzMb9b5dRuERp9p158FQ';
     var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + superHeroName + '&api_key=' + key;
@@ -26,6 +27,7 @@ $('#characters').on('change', function(e) {
     var dropdownValue = e.target.value;
     console.log(e.target.value)
     superHeroName=(dropdownValue);
+    localStorage.setItem("superHeroName", superHeroName);
 
     landingGiphy();
 })
