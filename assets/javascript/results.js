@@ -66,3 +66,37 @@ $("#marvel-form").on("submit", function(event) {
 
 });
 
+var characterList = [
+    {
+        title: "Thanos",
+        url: ("https://www.youtube.com/watch?v=TcMBFSGVi1c")
+    },
+    {
+        title: "Captain America",
+        url: ("https://www.youtube.com/watch?v=FkTybqcX-Yo")
+    },
+    {
+        title: "Doctor Strange",
+        url: ("https://www.youtube.com/watch?v=MWRUNTLisPo")
+    },
+    {
+        title: "Black Panther",
+        url: ("https://www.youtube.com/watch?v=xjDjIWPwcPU")
+    },
+    {
+        title: "Hulk",
+        url: ("https://www.youtube.com/watch?v=xbqNb2PFKKA")
+    },
+    {
+        title: "Thor",
+        url: ("https://www.youtube.com/watch?v=vJUDu40Z_RY")
+    },
+];
+// added a pass value to search button/remove if dont need
+function passValue() {
+    var selectCharacter = document.getElementById("characters").value;
+    localStorage.setItem("superHeroName", selectCharacter);
+    return true;
+  }
+
+
