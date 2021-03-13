@@ -32,7 +32,7 @@ Github Repo Link: https://github.com/JuliaKiser/Marvel.Eye
         * User can not only search character they are on, they can search any marvel character they can think of
 
 ## Demo Video
-![](Marvel.Eye/assets/Images/Marvel-Eye.gif)
+![Marvel Eye](./assets/Images/Marvel-Eye.gif)
 
 ## API Information
 
