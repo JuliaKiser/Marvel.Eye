@@ -34,7 +34,7 @@ $('#characters').on('change', function(e) {
 
 $("#form").submit(function(e){
     e.preventDefault()
-    location.href="./character-results.html?hero="+superHeroName
+    location.href="./character-results.html?hero=" + superHeroName
 
 })
 
@@ -114,11 +114,11 @@ var characterList = [
     },
     {
         title: "Captain America",
-        url: ("https://www.youtube.com/watch?v=FkTybqcX-Yo")
+        url: ("https://www.youtube.com/watch?v=6y3oHJnfnjU")
     },
     {
         title: "Doctor Strange",
-        url: ("https://www.youtube.com/watch?v=MWRUNTLisPo")
+        url: ("https://www.youtube.com/watch?v=HSzx-zryEgM")
     },
     {
         title: "Black Panther",
@@ -126,7 +126,7 @@ var characterList = [
     },
     {
         title: "Hulk",
-        url: ("https://www.youtube.com/watch?v=xbqNb2PFKKA")
+        url: ("https://www.youtube.com/watch?v=H3vQbMSVlDw")
     },
     {
         title: "Thor",
@@ -138,6 +138,32 @@ function passValue() {
     var selectCharacter = document.getElementById("characters").value;
     localStorage.setItem("superHeroName", selectCharacter);
     return true;
-  }
+  
+}
 
+$(".select-trailer").on("click", function(event) {
+    event.preventDefault();
+    var name = localStorage.getItem("superHeroName");
+    console.log(name)
+    if (name === "Thanos") {
+        window.open(characterList[0].url, "_blank");
+    } else if (name === "Captain America") {
+        window.open(characterList[1].url, "_blank");
+    }
+    else if (name === "Doctor Strange") {
+        window.open(characterList[2].url, "_blank");
+    }
+    else if (name === "Black Panther") {
+        window.open(characterList[3].url, "_blank");
+    }
+    else if (name === "Hulk") {
+        window.open(characterList[4].url, "_blank");
+    }
+    else if (name === "Thor") {
+        window.open(characterList[5].url, "_blank");
+    }
+    else {
 
+    }
+
+});
