@@ -16,6 +16,8 @@ Deployed Link: https://juliakiser.github.io/Marvel.Eye/
 
 Github Repo Link: https://github.com/JuliaKiser/Marvel.Eye
 
+[Presentation Link](https://docs.google.com/presentation/d/1bcXynJnQwCrZu3yxDFVPvInWi5Uv5dPHz3UMxiYWjnw/edit?usp=sharing)
+
 ## Application Details
 * Hompage
     * Select character from dropdown menu
