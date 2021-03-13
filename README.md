@@ -5,6 +5,7 @@ Marvel Eye takes the user through an interactive journey to select and review so
 ## Table of Contents
 1. [Dive into the world of Marvel](##Dive-into-the-world-of-Marvel)
 2. [Application Details](##Application-Details)
+3. [Demo Video](##Demo-Video)
 3. [API Information](##API-Information)
 4. [User Story](##User-Story)
 5. [Requirements](##Requirements)
@@ -29,6 +30,10 @@ Github Repo Link: https://github.com/JuliaKiser/Marvel.Eye
         * User can click and it will display search function
         * Search function is connected to Marvel API 
         * User can not only search character they are on, they can search any marvel character they can think of
+
+## Demo Video
+![](Marvel.Eye/assets/Images/Marvel-Eye.gif)
+
 ## API Information
 
 [Marvel API](https://developer.marvel.com/)
