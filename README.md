@@ -1,5 +1,6 @@
 # Marvel.Eye
 
+Marvel Eye takes the user through an interactive journey of character selection that in turn displays AWESOME animated gifs and 
 <!-- Goal is to use 3 API
 https://www.youtube.com/yt/dev/api-resources.html
 https://developer.marvel.com/

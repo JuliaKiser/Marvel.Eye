@@ -78,7 +78,7 @@ $("#marvel-form").on("submit", function(event) {
     var inputVal = $("#heroName").val()
     console.log("hit", inputVal);
     var ts = new Date().getTime()
-    var url = `http://gateway.marvel.com/v1/public/characters?name=${inputVal}&apikey=${apiKey}`
+    var url = `https://gateway.marvel.com/v1/public/characters?name=${inputVal}&apikey=${apiKey}`
     
     $.getJSON(url, {
         ts: ts,
